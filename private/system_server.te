@@ -28,6 +28,9 @@ allow system_server appdomain_tmpfs:file { getattr map read write };
 # For Incremental Service to check if incfs is available
 allow system_server proc_filesystems:file r_file_perms;
 
+# HBM service
+allow system_server sysfs_leds:file rw_file_perms;
+
 # To create files, get permission to fill blocks, and configure Incremental File System
 allow system_server incremental_control_file:file { ioctl r_file_perms };
 allowxperm system_server incremental_control_file:file ioctl {
