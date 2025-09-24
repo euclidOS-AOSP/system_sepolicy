@@ -744,6 +744,9 @@ allow init device:file create_file_perms;
 allow init input_device:dir r_dir_perms;
 allow init input_device:chr_file rw_file_perms;
 
+allow init sysfs_gpu:dir { create_dir_perms relabelfrom };
+allow init sysfs_gpu:file { create_file_perms relabelfrom };
+
 # Access device mapper for setting up dm-verity
 allow init dm_device:chr_file rw_file_perms;
 allow init dm_device:blk_file rw_file_perms;
