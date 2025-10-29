@@ -882,6 +882,8 @@ ro.lmk.use_minfree_levels       u:object_r:lmkd_config_prop:s0 exact bool
 ro.lmk.use_new_strategy         u:object_r:lmkd_config_prop:s0 exact bool
 ro.lmk.use_psi                  u:object_r:lmkd_config_prop:s0 exact bool
 ro.lmk.upgrade_pressure         u:object_r:lmkd_config_prop:s0 exact int
+ro.lmk.use_simple_lmk           u:object_r:lmkd_config_prop:s0 exact bool
+ro.lmk.slmk_debug               u:object_r:lmkd_config_prop:s0 exact bool
 lmkd.reinit                     u:object_r:lmkd_prop:s0 exact int
 
 ro.media.xml_variant.codecs             u:object_r:media_variant_prop:s0 exact string
