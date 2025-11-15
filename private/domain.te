@@ -1510,6 +1510,7 @@ neverallow domain {
   proc_type
   sysfs_type
   -sysfs_gpu
+  -proc_vendor_sched
 }:dir { add_name create link remove_name rename reparent rmdir write };
 
 # cgroupfs directories can be created, but not files within them.
